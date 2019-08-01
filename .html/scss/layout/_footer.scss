@@ -1,0 +1,65 @@
+
+/*
+================================================================================
+|                                     FOOTER                                   |
+================================================================================
+*/
+.footer{
+	position: relative;z-index: 2;
+	text-align:left;
+	width:auto;
+	min-width: $min-width;
+	order: 3;	
+    -webkit-order: 3;	padding:5px 0 5px;
+    height:60px;font-size: 14px; background: #fff;
+    border-top:1px solid rgba(20, 20, 20, 0.1);margin-left:110px;transition:all .5s ease;
+    .wrapper {padding: 0 90px 0 100px;}
+}
+
+.footer_cols {display: flex;align-items:center; justify-content: space-between;line-height:1.3;height:50px;} 
+
+.footer_mail { 
+	a {color: #141414;
+		span {font-size: 18px; display: inline-block; vertical-align: middle; margin: -3px 8px 0 -9px; color:#141414;opacity: 0.3;text-shadow: 0px 0 #141414;}
+	}  
+}
+.footer_inst { 
+	a {color: #141414;
+		span {width: 20px;line-height:0; display: inline-block;vertical-align: middle; margin: -3px 10px 0 0;}
+	}
+}
+.footer_copy {text-align:right;
+	a {color: #141414;}
+}    
+
+/*-------------*/
+@media screen and (max-width: 1279px){
+	.footer {
+		.wrapper {padding: 0 60px;}
+	}
+}
+
+@media screen and (max-width: 1023px) {
+	.footer {margin-left:0px;margin-bottom: 110px;    padding: 10px 0 10px;    height: 73px;
+		.wrapper {padding:0 41px 0 54px;}
+	}
+	.footer_cols{height:53px;}
+	.footer_inst {    width: 188px;}
+
+}
+@media screen and (max-width: 1023px) and (orientation: landscape) {  
+	.footer {border:none;height:auto; margin-bottom: 60px;    padding: 18px 0 18px;}
+}
+@media screen and (max-width: 767px) {
+	.footer .wrapper {    padding: 0 30px 0 30px;}
+	.footer_inst {    width: auto;}
+	
+
+}
+@media screen and (max-width: 599px) {
+	.footer {border:none;height:auto;    margin-bottom: 60px;    padding: 18px 0 18px;
+		.wrapper {    padding: 0 15px 0 15px;}
+	}
+	.footer_cols {flex-direction: column;align-items: center;  height:auto;  line-height: 35px;}
+	.footer_copy {text-align:center;}
+}

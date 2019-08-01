@@ -1,0 +1,115 @@
+
+@font-face {
+font-display: swap;
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype'),
+    url('../fonts/Gilroy-Bold.svg#Gilroy-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+font-display: swap;
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-SemiBold.eot');
+  src: url('../fonts/Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-SemiBold.woff') format('woff'),
+    url('../fonts/Gilroy-SemiBold.ttf') format('truetype'),
+    url('../fonts/Gilroy-SemiBold.svg#Gilroy-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+font-display: swap;
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Medium.eot');
+  src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy-Medium.ttf') format('truetype'),
+    url('../fonts/Gilroy-Medium.svg#Gilroy-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+font-display: swap;
+  font-family: 'Gilroy';
+  src: url('../fonts/Gilroy-Regular.eot');
+  src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+    url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype'),
+    url('../fonts/Gilroy-Regular.svg#Gilroy-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+font-display: swap;
+    font-family:'PlayfairDisplay';
+    src: url('../fonts/PlayfairDisplay-Regular.eot');
+    src: url('../fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-2074;
+}
+
+@font-face {
+font-display: swap;
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?kelk3y');
+  src:  url('../fonts/icomoon.eot?kelk3y#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?kelk3y') format('truetype'),
+    url('../fonts/icomoon.woff?kelk3y') format('woff'),
+    url('../fonts/icomoon.svg?kelk3y#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrdown:before {
+  content: "\e900";
+  color: #c84b06;
+}
+.icon-arrow:before {
+  content: "\e901";
+}
+.icon-back:before {
+  content: "\e902";
+}
+.icon-copy:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-mail:before {
+  content: "\e905";
+}
+.icon-nib:before {
+  content: "\e906";
+  color: #f2ece9;
+}
+.icon-quote-left:before {
+  content: "\e907";
+}
