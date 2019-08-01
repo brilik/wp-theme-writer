@@ -39,24 +39,28 @@
 	<div class="filterside">
 	<div class="filterside_scroll">
 		<div class="filters sfilters js-sfilters">
-			<a href="#" data-filter="filter1">детектив</a><a href="#" data-filter="filter2">любовь</a>
-            <a href="#" data-filter="filter3">тоска</a>
-			<a href="#" data-filter="filter4">лунной ночью</a><a href="#" data-filter="filter5">любовь</a>
-            <a href="#" data-filter="filter6">тоска</a>
-
-			<a href="#" data-filter="filter7">детектив</a><a href="#" data-filter="filter8">любовь</a>
-            <a href="#" data-filter="filter9">тоска</a>
-			<a href="#" data-filter="filter10">лунной ночью</a><a href="#" data-filter="filter11">любовь</a>
-            <a href="#" data-filter="filter12">тоска</a>
-
-			<a href="#" data-filter="filter13">детектив</a><a href="#" data-filter="filter14">любовь</a>
-            <a href="#" data-filter="filter15">тоска</a>
-			<a href="#" data-filter="filter16">лунной ночью</a><a href="#" data-filter="filter17">любовь</a>
-            <a href="#" data-filter="filter18">тоска</a>
-
-			<a href="#" data-filter="filter19">детектив</a><a href="#" data-filter="filter20">любовь</a>
-            <a href="#" data-filter="filter21">тоска</a>
-			<a href="#" data-filter="filter22">лунной ночью</a>
+            <?php
+            $args = array(
+                [
+                    'title' => 'детектив',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'любовь',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'тоска',
+                    'url' => '#'
+                ],
+                [
+                    'title' => 'лунной ночью',
+                    'url' => '#'
+                ]
+            );
+            ?>
+            <?php $count = 0; ?>
+            <?php ar_the_view('filter__side-scroll', $args); ?>
 		</div>
 		<a href="#" class="button button-bord">Применить</a>
 	</div>

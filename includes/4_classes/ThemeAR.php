@@ -260,4 +260,41 @@ class ThemeAR
 
         return array();
     }
+
+    /**
+     * Подсчитывает количество слов, входящих в строку string.
+     *
+     * @param $string
+     * @param int $readingSpeed defaul: 120
+     * @return string
+     */
+    private function get_str_word_count($string, $readingSpeed = 120)
+    {
+        // Get count words and string to Cyrilics
+        $words = str_word_count( strip_tags( $string ), 0, "АаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯя"  );
+
+        return $this->bm_estimated_reading_time($words, $readingSpeed);
+    }
+
+    /**
+     * Estimate time required to read the article
+     *
+     * @return string
+     */
+    private static function bm_estimated_reading_time($words, $readingSpeed) {
+
+        $minutes = floor( $words / $readingSpeed );
+        $minutes = str_pad($minutes, 2, '0', STR_PAD_LEFT);
+        $seconds = floor( $words % $readingSpeed / ( $readingSpeed / 60 ) );
+        $seconds = str_pad($seconds, 2, '0', STR_PAD_LEFT);
+
+        if ( 1 <= $minutes ) {
+            $estimated_time = $minutes . ':' . ($minutes == 1 ? '' : '') . $seconds . ($seconds == 1 ? '' : '');
+        } else {
+            $estimated_time = '0:' . $seconds . ($seconds == 1 ? '' : '');
+        }
+
+        return $estimated_time;
+
+    }
 }
