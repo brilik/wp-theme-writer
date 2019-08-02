@@ -1,5 +1,5 @@
 <?php
-$args = array(
+$items = array(
     [
         'title' => 'Чао, дорогой!',
         'url' => '#',
@@ -59,7 +59,25 @@ $args = array(
             </div>
             <div class="stories js-stories">
                 <?php $count = 0; ?>
-                <?php ar_the_view('page-stories__post', $args); ?>
+                <?php
+                    foreach ($items as $item)
+                    {
+                        $count++;
+                        $categoryType = '';
+
+                        $item['classRead'] = ($item['read']) ? ' done' : '';
+                        $item['classAngel'] = ($count % 2 == 0) ? ' angle1' : ' angle2';
+
+                        if( $item['category'] === 'short' )
+                            $item['categoryType'] = 'type1';
+                        elseif( $item['category'] === 'middle' )
+                            $item['categoryType'] = 'type2';
+                        elseif( $item['category'] === 'long' )
+                            $item['categoryType'] = 'type3';
+
+                        ar_the_view('page-stories__post', $item);
+                    }
+                ?>
             </div>
         </div>
     </div>

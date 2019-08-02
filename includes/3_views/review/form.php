@@ -1,22 +1,11 @@
-<?php
-$txtThanks = 'Спасибо за Ваш отзыв';
-?>
-<div class="form_layer">
-    <h3>Оставьте свой отзыв</h3>
-    <form id="form" method="POST">
-        <div class="form-field">
-            <div class="form-field__input">
-                <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+<div class="post post_form">
+    <div class="post_cont">
+        <div class="form">
+            <div class="form_layer">
+                <h3><?=$args['title'];?></h3>
+                <?php ar_the_view('form__review', $args['form']); ?>
+                <div class="h3"><?= $args['text-thanks']; ?></div>
             </div>
         </div>
-        <div class="form-field">
-            <div class="form-field__input">
-                <textarea name="rev" class="form-control" placeholder="Текст отзыва"></textarea>
-            </div>
-        </div>
-        <div class="form-button">
-            <button class="button button-bord">Отправить</button>
-        </div>
-    </form>
-    <div class="h3"><?= $txtThanks; ?></div>
+    </div>
 </div>

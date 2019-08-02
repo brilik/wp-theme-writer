@@ -26,6 +26,39 @@ class ThemeAR
         include $this->get_dir_path() . "/settings/crons.php";
     }
 
+    /**
+     * Получаем классы для тега <body>. Похожий на стандартную функцию wordpress the_body()
+     * (Необходимо дописать передачу параметров)
+     *
+     * @return string
+     */
+    public function get_class_body()
+    {
+        $classes[] = 'loaded';
+
+        if( is_home() ) {
+            $classes[] = 'home';
+            $classes[] = 'loadanim';
+        }
+
+        if( is_page('about') ){
+            $classes[] = 'loadanim';
+        }
+
+        if( is_page('story') ){
+            $classes[] = 'loadanim';
+            $classes[] = 'storybody';
+            $classes[] = 'blocked';
+        }
+
+        if( is_page('stories') ){
+            $classes[] = 'loadanim';
+            $classes[] = 'storiesbody';
+        }
+
+        return 'class="' . implode(" ", $classes) . '"';
+    }
+
     function theme_customize($customizer)
     {
 

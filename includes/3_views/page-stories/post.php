@@ -6,21 +6,7 @@
  */
 ?>
 
-<?php
-$count++;
-$categoryType = '';
-
-$classAngle = ($count % 2 == 0) ? ' angle1' : ' angle2';
-$classRead = ($args['read']) ? ' done' : '';
-
-if( $args['category'] === 'short' )
-    $categoryType = 'type1';
-elseif( $args['category'] === 'middle' )
-    $categoryType = 'type2';
-elseif( $args['category'] === 'long' )
-    $categoryType = 'type3';
-?>
-<div class="stories_item<?= $categoryType . $classAngle . $classRead; ?>">
+<div class="stories_item<?= $args['categoryType'] . $args['classAngel'] . $args['classRead']; ?>">
     <a href="<?= $args['url']; ?>" class="stories_item_icon"></a>
     <div class="stories_item_cont">
         <div class="stories_item_title"><?= $args['title']; ?></div>
