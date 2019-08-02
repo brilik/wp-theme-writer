@@ -3,7 +3,7 @@ global $themeAR, $debugAR;
 
 ar_the_view("head");
 
-//ar_the_view("page-main__section");
+ar_the_view("page-main__section");
 
 $about_params = array(
     'description' => '<p>Если ты не влюблён, то тебя всё будет раздражать в ней, даже то, как она моргает.
@@ -274,7 +274,7 @@ $story_params = array(
     )
 );
 
-ar_the_view('page-story__section', $story_params);
+//ar_the_view('page-story__section', $story_params);
 
 get_header();
 
