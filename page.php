@@ -37,7 +37,7 @@ while (have_posts()) : the_post();
     the_content();
 
     ar_the_view('page-about__section', $about_params);
-e
+
 endwhile;
 ?>
 <?php get_footer(); ?>
