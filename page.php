@@ -1,5 +1,5 @@
-<?php get_header(); ?>
 <?php
+ar_the_view("head");
 
 $about_params = array(
     'description' => '<p>Если ты не влюблён, то тебя всё будет раздражать в ней, даже то, как она моргает.
@@ -40,4 +40,9 @@ while (have_posts()) : the_post();
 
 endwhile;
 ?>
-<?php get_footer(); ?>
+<?php get_header(); ?>
+<?php
+if( !is_home() ){
+    get_footer();
+}
+?>
