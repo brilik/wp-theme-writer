@@ -1,3 +1,8 @@
+<?php
+$headerAuthor = array(
+    'author' => 'Сюзанна Лотокова'
+);
+?>
 </main>
 
 <!-- CONTENT EOF   -->
@@ -6,7 +11,7 @@
 
 <header class="header">
     <div class="wrapper">
-        <?php ar_the_view('header-part__author'); ?>
+        <?php ar_the_view('header-part__author', $headerAuthor); ?>
     </div>
 </header>
 

@@ -1,12 +1,6 @@
-<?php
-$class = 'mail';
-$href = 'suziloto@gmail.com';
-$icon = '<span class="icon-mail"></span>';
-$title = 'suziloto@gmail.com';
-?>
-<div class="footer_<?= $class; ?>">
-    <a href="mailto:<?= $href; ?>">
-        <?= $icon; ?>
-        <?= $title; ?>
+<div class="footer_<?= $args['class']; ?>">
+    <a href="mailto:<?= $args['href']; ?>">
+        <?= $args['icon']; ?>
+        <?= $args['title']; ?>
     </a>
 </div>

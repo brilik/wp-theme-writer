@@ -1,15 +1,8 @@
-<?php
-$class = 'inst';
-$url = '#';
-$imgSrc = 'svg/instagram.svg';
-$imgAlt = 'instagram';
-$title = 'suziiloto';
-?>
-<div class="footer_<?=$class;?>">
-    <a href="<?=$url;?>">
+<div class="footer_<?= $args['class']; ?>">
+    <a href="<?= $args['url']; ?>">
         <span>
-            <img data-src="<?=$imgSrc;?>" src="/" class="js-img" alt="<?=$imgAlt;?>"/>
+            <img data-src="<?= $themeAR->get_src() . $args['imgSrc']; ?>" src="/" class="js-img" alt="<?= $args['imgAlt']; ?>"/>
         </span>
-        <?=$title;?>
+        <?= $args['title']; ?>
     </a>
 </div>

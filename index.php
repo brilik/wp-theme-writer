@@ -3,7 +3,7 @@ global $themeAR, $debugAR;
 
 ar_the_view("head");
 
-ar_the_view("page-main__section");
+//ar_the_view("page-main__section");
 
 $about_params = array(
     'description' => '<p>Если ты не влюблён, то тебя всё будет раздражать в ней, даже то, как она моргает.
@@ -37,7 +37,7 @@ $about_params = array(
     'sign' => 'Всегда ваша<br/>Сюзанна Лотокова'
 );
 
-//ar_the_view('page-about__section', $about_params);
+ar_the_view('page-about__section', $about_params);
 
 //ar_the_view('page-stories__section');
 

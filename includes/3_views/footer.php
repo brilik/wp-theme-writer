@@ -1,3 +1,19 @@
+<?php
+
+$socialInst = array(
+    'class' => 'inst',
+    'url' => '#',
+    'imgSrc' => '/assets/svg/instagram.svg',
+    'imgAlt' => 'instagram',
+    'title' => 'suziiloto'
+);
+$mail = array(
+    'class' => 'mail',
+    'href' => 'suziloto@gmail.com',
+    'icon' => '<span class="icon-mail"></span>',
+    'title' => 'suziloto@gmail.com'
+);
+?>
 <?php if (is_home()): ?>
 
     <?php ar_the_view('aside', array('wow-duration' => 1, 'wow-delay' => 2.8)); ?>
@@ -9,8 +25,8 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="footer_cols">
-                <?php ar_the_view('footer-part__social-inst'); ?>
-                <?php ar_the_view('footer-part__mail'); ?>
+                <?php ar_the_view('footer-part__social-inst', $socialInst); ?>
+                <?php ar_the_view('footer-part__mail', $mail); ?>
                 <?php ar_the_view('footer-part__copyright'); ?>
             </div>
         </div>
@@ -30,8 +46,8 @@
     <footer class="footer">
         <div class="wrapper">
             <div class="footer_cols">
-                <?php ar_the_view('footer-part__social-inst'); ?>
-                <?php ar_the_view('footer-part__mail'); ?>
+                <?php ar_the_view('footer-part__social-inst', $socialInst); ?>
+                <?php ar_the_view('footer-part__mail', $mail); ?>
                 <?php ar_the_view('footer-part__copyright'); ?>
             </div>
         </div>
