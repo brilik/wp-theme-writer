@@ -3,8 +3,6 @@ global $themeAR, $debugAR;
 
 ar_the_view("head");
 
-//ar_the_view("page-main__section");
-
 $about_params = array(
     'description' => '<p>Если ты не влюблён, то тебя всё будет раздражать в ней, даже то, как она моргает.
                             Слишком быстро или медленно, неважно, повод придраться всегда найдётся. Ты
@@ -36,10 +34,6 @@ $about_params = array(
     'title' => 'Немножко <br/>обо мне',
     'sign' => 'Всегда ваша<br/>Сюзанна Лотокова'
 );
-
-ar_the_view('page-about__section', $about_params);
-
-//ar_the_view('page-stories__section');
 
 $story_params = array(
     'title' => array(
@@ -274,6 +268,9 @@ $story_params = array(
     )
 );
 
+//ar_the_view("page-main__section");
+ar_the_view('page-about__section', $about_params);
+//ar_the_view('page-stories__section');
 //ar_the_view('page-story__section', $story_params);
 
 get_header();
